@@ -13,7 +13,7 @@ $mail->isSMTP();
 $mail->Host = 'mail.slangrick.com';
 $mail->SMTPAuth = true;
 $mail->Username = 'bot@slangrick.com';
-$mail->Password = 'botPassword2020';
+$mail->Password = 'Censored';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
