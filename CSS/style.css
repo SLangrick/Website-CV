@@ -300,6 +300,9 @@ html {
     .sidenav {
         display: none;
     }
+    .parallax {
+        background-image: url(../Images/Personal/Backdrop-resize.png);
+    }
 }
 
 /* Style the button that is used to open and close the collapsible content */
