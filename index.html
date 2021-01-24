@@ -2,12 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="theme-color" content="#000000">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Samuel Langrick</title>
+        <link rel="manifest" href="manifest.json">
+        
+        <link rel="apple-touch-icon" href="images/mcdLogo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/style.css">
         
     </head>
     <body style = "margin:0">
+        <script src="index.js"></script>
         <div class="sidenav">
             <img src="Images/Personal/Sam_Gates_Square.jpg" id="Picture">
             <a href="#profile" class="Nav">Profile</a>
@@ -258,7 +264,7 @@
                 <div class="text">
                     <h1>Contact</h1>
                     <div id="FormContainer">
-                        <form name="myForm" action="email.php" method="POST" onsubmit="return validateForm()">
+                        <form name="myForm" action="php/email.php" method="POST" onsubmit="return validateForm()">
                             <label for="fname">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your name..">
                         
@@ -276,7 +282,7 @@
                             <img src="Images/Design/Phone-Circle.png" class="ProjectIcon">
                             <div class="hline"></div>
                             <p>Phone:</p>
-                            <p>074272682154</p>
+                            <p>07427682154</p>
                         </div>
                         <div class="Pancake">
                             <img src="Images/Design/Email-Circle-Colour.png" class="ProjectIcon">
@@ -314,7 +320,6 @@
                 }
               });
             }
-
             function validateForm(){
                 var x = document.forms["myForm"]["name"].value;
                 if (x == "") {
@@ -326,16 +331,11 @@
                     alert("Email must be filled out");
                     return false;
                 }
-                if (x == )
                 var x = document.forms["myForm"]["subject"].value;
                 if (x == "") {
                     alert("Subject must be filled out");
                     return false;
                 }
-            }
-            function validateEmail(email) {
-                const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return re.test(email);
             }
             </script>
     </body>

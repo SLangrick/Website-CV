@@ -1,0 +1,17 @@
+{
+    "name": "Samuel Langrick",
+    "short_name": "SLangrick",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "Images/Personal/Sam_Gates_Square.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+
+    ]
+
+}

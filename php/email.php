@@ -25,5 +25,5 @@ $mail->isHTML(true);
 $mail->Subject = "Email from: " . $_POST['name'] . " " . $_POST['email'];
 $mail->Body = $_POST['subject'];
 $mail->send();
-header('Location: index.html');
+//header('Location: ../index.html');
 ?>
